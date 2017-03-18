@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
 import YTSearch from 'youtube-api-search';
+import VideoList from './components/video_list';
 
 const API = 'AIzaSyDu1kyvI6WQ0WlKZJey_L8aM4mGpawavkg';
 
@@ -20,6 +21,7 @@ class APP extends Component {
           Learning React.jsx
           <hr />
         <SearchBar />
+        <VideoList videos={this.state.videos}  />
       </div>
     );
   }
